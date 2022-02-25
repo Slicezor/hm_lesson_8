@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Домашка к уроку №8</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div>
+				<h1>Псевдоклассы и псевдоэлементы</h1>
+			</div>
+		</header>
+
+		<main class="main">
+			<div class="h2">
+				<h2 class="pseudoclass">
+					Псевдоклассы
+				</h2>
+			</div>
+			<div class="box">
+				<div class="in-box">
+					<ul class="list-1">
+						<li>
+							<p class="sub-list-name">Состояния</p>
+							<ul class="sub-list">
+								<li><a href="#hover">:hover</a></li>
+								<li><a href="#active">:active</a></li>
+								<li><a href="#visited">:visited</a></li>
+								<li><a href="#focus">:focus</a></li>
+								<li><a href="#target">:target</a></li>
+							</ul>
+						</li>
+						<li>
+							<p class="sub-list-name">Положения в коде</p>
+							<ul class="sub-list">
+								<li><a href="#first-child">:first-child</a></li>
+								<li><a href="#first-of-type">:first-of-type</a></li>
+								<li><a href="#last-child">:last-child</a></li>
+								<li><a href="#last-of-type">:last-of-type</a></li>
+								<li><a href="#nth-child">:nth-child</a></li>
+								<li><a href="#nth-of-type">:nth-of-type</a></li>
+								<li><a href="#not">:not</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="conteiner">
+				<h3 id="hover">Псевдокласс :hover</h3>
+				<p class="about">
+					Срабатывает при наведении на элемент,
+					часто применяется как для ссылок так и
+					для любого другого элемента
+				</p>
+				<div class="cont">
+					<div class="example">
+						<a href="##" class="example-1">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae harum vel fuga obcaecati quas, saepe
+							eius? Recusandae, fuga. Eius pariatur minus vero dolorum eum dignissimos incidunt nobis illo ullam
+							maiores?
+						</a>
+					</div>
+				</div>
+
+				<h3 id="active">Псевдокласс :active</h3>
+				<p class="about">
+					Сробатывает при нажатии на элемент.
+					В основном применяется к ссылкам и кнопкам
+				</p>
+				<div class="cont">
+					<div class="example">
+						<a href="##" class="example-2">НАЖМИ НА МЕНЯ</a>
+					</div>
+				</div>
+
+				<h3 id="visited">Псевдокласс :visited</h3>
+				<p class="about">
+					Срабатывает для посещенных ссылок
+				</p>
+				<div class="cont">
+					<div class="example">
+						<a href="https://fls.guru/" class="example-3">О Жеке</a>
+						<a href="https://fls.guru/flexbox.html" class="example-3">Шпаргалка по FLEX</a>
+						<a href="https://fls.guru/itprofessions.html" class="example-3">Список IT-профессий</a>
+					</div>
+				</div>
+
+				<h3 id="focus">Псевдокласс :focus</h3>
+				<p class="about">
+					Срабатывает при получении элементом фокуса.
+					Часто применяется к элементам форм.
+					Например инпутам и т.д.
+				</p>
+				<div class="cont">
+					<div class="example">
+						<ul class="example-4">
+							<li><a href="##">Focus me pls</a></li>
+							<li><a href="##">Focus me pls</a></li>
+							<li><a href="##">Focus me pls</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<h3 id="target">Псевдокласс :target</h3>
+				<p class="about">
+					Срабатывает когда элемент является объектом
+					на который ссылается
+				</p>
+				<div class="cont">
+					<div class="example">
+						<a href="#text-block" class="link-example">Покажися</a>
+						<a href="##" class="link-example">Накажися</a>
+						<p id="text-block" class="text-example">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+							Ullam nulla perferendis blanditiis illum accusantium quos distinctio atque tempora id sunt nobis in
+							vitae necessitatibus perspiciatis impedit, assumenda deleniti nihil sed.</p>
+					</div>
+				</div>
+
+				<h3 id="first-child">Псевдокласс :first-child</h3>
+				<p class="about">
+					Обращение к первому элементу в блоке
+				</p>
+				<div class="cont">
+					<div class="example fc">
+						<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut, unde cumque sunt obcaecati porro laudantium quos adipisci eaque ipsam deleniti facilis numquam non ipsa blanditiis minima libero? Non, alias deserunt.</p>
+						<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut, unde cumque sunt obcaecati porro laudantium quos adipisci eaque ipsam deleniti facilis numquam non ipsa blanditiis minima libero? Non, alias deserunt.</p>
+						<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut, unde cumque sunt obcaecati porro laudantium quos adipisci eaque ipsam deleniti facilis numquam non ipsa blanditiis minima libero? Non, alias deserunt.</p>
+					</div>
+				</div>
+
+				<h3 id="first-of-type">Псевдокласс :first-of-type</h3>
+				<p class="about">
+					Обращение к первому элементу типа
+				</p>
+				<div class="cont">
+					<div class="example fot">
+						<span>Lorem.</span>
+						<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut, unde cumque sunt obcaecati porro laudantium quos adipisci eaque ipsam deleniti facilis numquam non ipsa blanditiis minima libero? Non, alias deserunt.</p>
+						<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut, unde cumque sunt obcaecati porro laudantium quos adipisci eaque ipsam deleniti facilis numquam non ipsa blanditiis minima libero? Non, alias deserunt.</p>
+						<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut, unde cumque sunt obcaecati porro laudantium quos adipisci eaque ipsam deleniti facilis numquam non ipsa blanditiis minima libero? Non, alias deserunt.</p>
+					</div>
+				</div>
+
+				<h3 id="last-child">Псевдокласс :last-child</h3>
+				<p class="about">
+					Обращение к последнему элементу в блоке
+				</p>
+				<div class="cont">
+					<div class="example lc">
+						<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut, unde cumque sunt obcaecati porro laudantium quos adipisci eaque ipsam deleniti facilis numquam non ipsa blanditiis minima libero? Non, alias deserunt.</p>
+						<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut, unde cumque sunt obcaecati porro laudantium quos adipisci eaque ipsam deleniti facilis numquam non ipsa blanditiis minima libero? Non, alias deserunt.</p>
+						<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut, unde cumque sunt obcaecati porro laudantium quos adipisci eaque ipsam deleniti facilis numquam non ipsa blanditiis minima libero? Non, alias deserunt.</p>
+					</div>
+				</div>
+
+				<h3 id="last-of-type">Псевдокласс :last-of-type</h3>
+				<p class="about">
+					Обращение к последнему элементу типа
+				</p>
+				<div class="cont">
+					<div class="example lot">
+						<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut, unde cumque sunt obcaecati porro laudantium quos adipisci eaque ipsam deleniti facilis numquam non ipsa blanditiis minima libero? Non, alias deserunt.</p>
+						<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut, unde cumque sunt obcaecati porro laudantium quos adipisci eaque ipsam deleniti facilis numquam non ipsa blanditiis minima libero? Non, alias deserunt.</p>
+						<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut, unde cumque sunt obcaecati porro laudantium quos adipisci eaque ipsam deleniti facilis numquam non ipsa blanditiis minima libero? Non, alias deserunt.</p>
+						<span>Lorem.</span>
+					</div>
+				</div>
+
+				<h3 id="nth-child">Псевдокласс :nth-child</h3>
+				<p class="about">
+					Обращение к конкретным элементам в блоке
+				</p>
+				<div class="cont">
+					<div class="example nthc">
+						<span>Lorem.</span>
+						<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut, unde cumque sunt obcaecati porro laudantium quos adipisci eaque ipsam deleniti facilis numquam non ipsa blanditiis minima libero? Non, alias deserunt.</p>
+						<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut, unde cumque sunt obcaecati porro laudantium quos adipisci eaque ipsam deleniti facilis numquam non ipsa blanditiis minima libero? Non, alias deserunt.</p>
+						<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut, unde cumque sunt obcaecati porro laudantium quos adipisci eaque ipsam deleniti facilis numquam non ipsa blanditiis minima libero? Non, alias deserunt.</p>
+					</div>
+				</div>
+
+				<h3 id="nth-of-type">Псевдокласс :nth-of-type</h3>
+				<p class="about">
+					Обращение к конкретным элементам в блоке по типу
+				</p>
+				<div class="cont">
+					<div class="example nthot">
+						<span>Lorem.</span>
+						<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut, unde cumque sunt obcaecati porro laudantium quos adipisci eaque ipsam deleniti facilis numquam non ipsa blanditiis minima libero? Non, alias deserunt.</p>
+						<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut, unde cumque sunt obcaecati porro laudantium quos adipisci eaque ipsam deleniti facilis numquam non ipsa blanditiis minima libero? Non, alias deserunt.</p>
+						<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut, unde cumque sunt obcaecati porro laudantium quos adipisci eaque ipsam deleniti facilis numquam non ipsa blanditiis minima libero? Non, alias deserunt.</p>
+					</div>
+				</div>
+
+				<h3 id="not">Псевдокласс :not</h3>
+				<p class="about">
+					Исключение
+				</p>
+				<div class="cont">
+					<div class="example not">
+						<span>Lorem.</span>
+						<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut, unde cumque sunt obcaecati porro laudantium quos adipisci eaque ipsam deleniti facilis numquam non ipsa blanditiis minima libero? Non, alias deserunt.</p>
+						<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut, unde cumque sunt obcaecati porro laudantium quos adipisci eaque ipsam deleniti facilis numquam non ipsa blanditiis minima libero? Non, alias deserunt.</p>
+						<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut, unde cumque sunt obcaecati porro laudantium quos adipisci eaque ipsam deleniti facilis numquam non ipsa blanditiis minima libero? Non, alias deserunt.</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="h2">
+				<h2 class="pseudoclass">
+					Псевдоэлементы
+				</h2>
+			</div>
+			<div class="box">
+				<div class="in-box">
+					<ul class="list-2">
+						<li><a href="#first-line">::first-line</a></li>
+						<li><a href="#first-letter">::first-letter</a></li>
+						<li><a href="#before">::before</a></li>
+						<li><a href="#after">::after</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<h3 id="first-line">Псевдоэлемент ::first-line</h3>
+				<p class="about">
+					Задает стиль первой строки текста
+				</p>
+				<div class="cont">
+					<div class="example fline">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, doloremque ipsa praesentium similique est corrupti sint, voluptates ducimus ex fugiat rem, at id distinctio error laboriosam voluptas officiis omnis iure?</p>
+					</div>
+				</div>
+
+				<h3 id="first-letter">Псевдоэлемент ::first-letter</h3>
+				<p class="about">
+					Определяет стиль первого символа текста элемента
+				</p>
+				<div class="cont">
+					<div class="example fletter">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, doloremque ipsa praesentium similique est corrupti sint, voluptates ducimus ex fugiat rem, at id distinctio error laboriosam voluptas officiis omnis iure?</p>
+					</div>
+				</div>
+
+				<h3 id="before">Псевдоэлемент ::before</h3>
+				<p class="about">
+					Добавление контента до
+				</p>
+				<div class="cont">
+					<div class="example before">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, doloremque ipsa praesentium similique est corrupti sint, voluptates ducimus ex fugiat rem, at id distinctio error laboriosam voluptas officiis omnis iure?</p>
+					</div>
+				</div>
+
+				<h3 id="after">Псевдоэлемент ::after</h3>
+				<p class="about">
+					Добавление контента после
+				</p>
+				<div class="cont">
+					<div class="example after">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, doloremque ipsa praesentium similique est corrupti sint, voluptates ducimus ex fugiat rem, at id distinctio error laboriosam voluptas officiis omnis iure?</p>
+					</div>
+				</div>
+		</main>
+
+		<footer>
+			<div class="footer">
+				<a href="maket.html" target="_blank" class="button">Домашка с фигмой</a>
+			</div>
+		</footer>
+	</div>
+</body>
+
+</html>
